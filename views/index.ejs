@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Taco Bout' It</title>
+</head>
+<body>
+    <h1 class="indieFlower">Taco bout' It</h1>
+    <p class="link"> FIND YOUR FAVORITE TACO SPOT!</p>
+    <div>
+      <img class="taco" src="https://i.pinimg.com/564x/cb/d1/8d/cbd18dd8da3a2ec741054096aa0963d0.jpg" alt="TACOS">
+    </div>
+    <div>
+      <span class="ultraViolet">Sign in to review a restaurant and taco bout' it!</span>
+      <% if (locals.messages.errors) { %> 
+        <% messages.errors.forEach( el => { %>
+          <div class="alert alert-danger"><%= el.msg %></div>
+        <% }) %>
+      <% } %> 
+      <% if (locals.messages.info) { %> 
+        <% messages.info.forEach( el => { %>
+          <div class="alert alert-info"><%= el.msg %></div>
+        <% }) %>
+      <% } %>
+      <form action="/auth/login" method="POST" class="whitespace">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input class="submit" type="submit" value="Login">
+      </form>
+
+      <span>Don't have an account yet?</span><a href="auth/signup"><button class="signUp">Sign Up</button></a>
+    </div>
+    <div>
+      <span>Not ready to commit? <a href="../viewfeed">Browse Reviews</a></span>
+    </div>
+    <footer>
+        <small>©Taco Bout' It 2021</small>
+    </footer>
+    
+</body>
+</html>

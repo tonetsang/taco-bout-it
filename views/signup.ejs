@@ -1,0 +1,42 @@
+
+<!-- Created -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Taco Bout' It - Sign Up</title>
+</head>
+<body>
+    
+    <h1 class="indieFlower">Sign Up</h1>
+    <% if (locals.messages.errors) { %>
+            <% messages.errors.forEach( el => { %>
+                <div class="alert alert-danger"><%= el.msg %></div>
+            <% }) %>    
+    <% } %>
+    <% if (locals.messages.info) { %>
+            <% messages.info.forEach( el => { %>
+                <div class="alert alert-info"><%= el.msg %></div>
+            <% }) %>    
+    <% } %>    
+    <form action="/auth/signup" method="POST">
+        <input type="text" name="userName" placeholder="User Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="confirmPassword" placeholder="Confirm Password">
+        <input class="submit" type="submit">
+    </form>
+    <div class="home">
+        <a href="/"><button>Home</button></a>
+    </div>
+    <footer>
+        <small>©Taco Bout' It 2021</small>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+align-content: center;
+justify-content: center;
+text-align: center;
+background-color:  #c7cedf;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+h1{
+  display: flex;
+  color: #007a79;
+  font-size: 5rem;
+  justify-content: center;
+  /* font-family: bebas-neue,sans-serif;
+  font-weight: 400; */
+  font-family: "Poppins"; 
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 1.25px;
+  text-align: center;
+  text-decoration: underline;
+}
+.link{
+  color: #002a29;
+  font-size: 1.3rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: bebas-neue,sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 3px;
+  padding-top: 1em;
+}
+.taco{
+  width: 25em;
+  transform: rotate(90deg);
+  border: solid rgba(0, 0, 0, 0.658);
+  padding: none;
+  margin: 0;
+}
+.signUp{
+  background-color: transparent; 
+  color: rgb(34, 34, 34);
+  border: 1.5px solid rgb(34, 34, 34);
+  border-radius: 0px;
+  padding: 1em 1em;
+  cursor: pointer;
+  /**text adjustments **/
+  font-family: bebas-neue,sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  /** Animation **/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all .3s ease;	
+  /** Flexbox **/
+  width: auto;
+  resize: both;
+  margin: 5px;
+}
+.submit{
+  background-color: transparent; 
+  color: rgb(34, 34, 34);
+  border: 1.5px solid rgb(34, 34, 34);
+  border-radius: 0px;
+  padding: 1em 2em;
+  cursor: pointer;
+  /**text adjustments **/
+  font-family: bebas-neue,sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  /** Animation **/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all .3s ease;	
+  /** Flexbox **/
+  width: auto;
+  resize: both;
+  margin: 5px;
+}
+.home{
+  margin-top: 10px
+}
+span{
+  font-family: bebas-neue,sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 2;
+}
+
+input::-webkit-input-placeholder {
+  color: #fff;
+  transition: color .4s ease;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+/*************** Is this needed? ****************/
+.input{
+  style: none;
+}
+/*************** --------------- ****************/
+footer {
+  border-top: 2px solid white;
+  margin: 2em 20em;
+  padding-top: 2em;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+.indieFlower {
+  font-family: 'Indie Flower', cursive;
+}
+
+.ultraViolet {
+  color: #5C246E;
+  font-size: 18px;
+}
+
+.whitespace {
+  padding-bottom: 1em 
+}

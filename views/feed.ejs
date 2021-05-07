@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Bout' It - Feed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body class='center'>
+
+  <nav>
+    <a href="../auth/logout"><button>Logout</button></a>
+    <a href="../reviews"><button>My reviews</button></a>
+    <button class="toggle">Dark Mode</button>
+  </nav>
+    <h1 class="indieFlower">Feed</h1>
+  
+    
+  <div class="feed">  
+    <ul>
+   
+    <% reviews.forEach( review => { %>
+            <li class='todoItem' data-id='<%=review._id%>'>
+               
+                
+      <a href="/reviews/resume/<%= review._id%>" >
+                  <%= review.name %>
+                  </a> :      
+                  <%= review.address %> :
+                  <%= review.review %> 
+                  
+          
+                [<%= review.userName %>]             
+
+                <% if(review.creatorId == user._id) {%>
+                   <span class='del fa fa-trash'></span>
+                <%}%>  
+
+                 <i class="fa fa-thumbs-up"></i>
+                 <%= review.likes %>
+            </li>
+            <li>
+                <img class="thumb" src="<%= review.image%>">
+            </li>
+    <% }) %>    
+    </ul>
+  </div>
+    <a href="#" class="cd-top text-replace js-cd-top"><span>Back to top</span></a>
+
+    <footer>
+        <small>©Taco Bout' It 2021</small>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
