@@ -18,25 +18,25 @@
     <span>
       <a href="/">Have an account already? Sign in!</a>
     </span>
-
-    <ul>
-        <% reviews.forEach( review => { %>
-        <li class='todoItem' data-id='<%=review._id%>'>          
-            <a href="/todos/resume/<%= review._id%>" >
-                <%= review.name %>
-            </a> :      
-            <%= review.address %> :
-            <%= review.review %> 
-            [<%= review.userName %>]            
-            <i class="fa fa-thumbs-up"></i>
-            <%= review.likes %>
-        </li>
-        <li class='break'>
-            <img src="<%= review.image%>">
-        </li>
-    <% }) %>    
-    </ul>
-
+    <div class="feed">
+        <ul>
+            <% reviews.forEach( review => { %>
+            <li class='todoItem' data-id='<%=review._id%>'>          
+                <a href="/todos/resume/<%= review._id%>" >
+                    <%= review.name %>
+                </a> :      
+                <%= review.address %> :
+                <%= review.review %> 
+                [<%= review.userName %>]            
+                <i class="fa fa-thumbs-up"></i>
+                <%= review.likes %>
+            </li>
+            <li>
+                <img class="thumb" src="<%= review.image%>">
+            </li>
+            <% }) %>    
+        </ul>
+    </div>
     <a href="#" class="cd-top text-replace js-cd-top"><span>Back to top</span></a>
 
     <script src="js/main.js"></script>
