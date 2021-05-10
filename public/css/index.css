@@ -114,6 +114,34 @@ h1{
   resize: both;
   margin: 5px;
 }
+
+button {
+  background-color:transparent; 
+  color: white;
+  border: 1.5px solid white;
+  border-radius: 0px;
+  padding: 1em 1em;
+  cursor: pointer;
+  /**text adjustments **/
+  font-family: bebas-neue,sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 3px;
+  text-align: center;
+  /** Animation **/
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all .3s ease;	 */
+  /** Flexbox **/
+  width: auto;
+  resize: both;
+  align-content: center;
+  margin: 5px;
+}
+
 .home {
   margin-top: 10px
 }
