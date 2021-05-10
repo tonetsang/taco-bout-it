@@ -206,7 +206,8 @@ html.dark {
           }
 
 .center {
-  text-align: center;  
+  display: flex;
+  justify-content: center;  
 }
 
 .thumb {
