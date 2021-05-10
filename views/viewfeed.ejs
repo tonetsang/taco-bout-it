@@ -18,17 +18,15 @@
     </nav>
 
     <h1 class="indieFlower">Feed</h1>
-    <span>
-      <a href="auth/signup">Click here to sign up and add a review!</a>
-    </span>
     <span class="break whitespace">
-      <a href="/">Have an account already? Sign in!</a>
+        <a href="auth/signup">Click here to sign up and add a review!</a><span> | </span>
+        <a href="/">Have an account already? Sign in!</a>
     </span>
     <div class="feed">
         <ul>
             <% reviews.forEach( review => { %>
             <li class='todoItem' data-id='<%=review._id%>'>          
-                <a href="/todos/resume/<%= review._id%>" >
+                <a href="/reviews/resume/<%= review._id%>" >
                     <%= review.name %>
                 </a> :      
                 <%= review.address %> :
