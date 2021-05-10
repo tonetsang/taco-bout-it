@@ -102,7 +102,7 @@ li{
 }
 
 .whitespace {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
             /* buttons to keep consistent w first page button from index page */
 button {
@@ -251,6 +251,10 @@ footer {
     justify-content: center;
   }
 
+}
+
+.underline {
+  text-decoration: underline
 }
 
 .dumpster {
