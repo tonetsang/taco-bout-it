@@ -62,7 +62,7 @@ span {
   letter-spacing: 2px;
   text-align: center;
 }
-input, textarea {
+input {
   background: transparent;
   border: none;
   border-bottom: 1px solid #fff;
@@ -72,12 +72,12 @@ input, textarea {
   z-index: 2;
 }
 
-input, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
   color: grey;
   transition: color .4s ease;
 }
 
-input, textarea:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
