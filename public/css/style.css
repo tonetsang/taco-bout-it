@@ -94,8 +94,13 @@ li{
   flex: 1 0 21%;
   margin: 5px;
 }
-.break{
+
+.break {
   border-bottom: 2px solid whitesmoke;
+}
+
+.whitespace {
+  margin-bottom: 10px;
 }
             /* buttons to keep consistent w first page button from index page */
 button {
