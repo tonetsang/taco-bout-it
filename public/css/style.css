@@ -172,6 +172,32 @@ html.dark {
 
           /* jush */
 
+          .submit{
+            background-color: transparent; 
+            color: rgb(34, 34, 34);
+            border: 1.5px solid rgb(34, 34, 34);
+            border-radius: 0px;
+            padding: 1em 2em;
+            cursor: pointer;
+            /**text adjustments **/
+            font-family: bebas-neue,sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 14px;
+            letter-spacing: 3px;
+            text-align: center;
+            /** Animation **/
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            transition: all .3s ease;	
+            /** Flexbox **/
+            width: auto;
+            resize: both;
+            margin: 5px;
+          }
+
 .center {
   text-align: center;  
 }
