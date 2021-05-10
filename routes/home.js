@@ -11,6 +11,6 @@ router.get('/feed', ensureAuth, todosController.getAllReviews )
 
 router.get('/viewfeed', ensureGuest, todosController.getAllReviewsGuest )
 
-router.get('reviews/resume/:id', ensureGuest, todosController.renderResume)
+router.get('/resume/:id', ensureGuest, todosController.renderResume)
 
 module.exports = router
