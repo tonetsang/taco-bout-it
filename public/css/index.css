@@ -33,17 +33,12 @@ background-color:  #c7cedf;
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
-}
 h1{
-  display: flex;
   color: #007a79;
-  font-size: 5rem;
-  justify-content: center;
+  font-size: 3.5rem;
   /* font-family: bebas-neue,sans-serif;
-  font-weight: 400; */
-  font-family: "Poppins"; 
+  font-weight: 400; */ 
   text-transform: uppercase;
   line-height: 14px;
   letter-spacing: 1.25px;
@@ -119,10 +114,10 @@ h1{
   resize: both;
   margin: 5px;
 }
-.home{
+.home {
   margin-top: 10px
 }
-span{
+span {
   font-family: bebas-neue,sans-serif;
   font-size: 11px;
   font-weight: 400;
@@ -149,10 +144,51 @@ input::-webkit-input-placeholder {
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
-/*************** Is this needed? ****************/
-.input{
-  style: none;
-}
+
+          /* nav */
+
+          nav, .right {
+            display: flex;
+            justify-content: flex-end;
+          }
+          
+                    /*dark mode stuff*/
+          :root {
+             /* --primary-color: transparent;
+              --secondary-color:white; */
+              --primary-color: black;
+              --secondary-color:white;
+          }
+          html {
+            background-color: #c7cedf;
+              transition: all 0.5s ease-in;
+             
+          }
+          html.dark {
+             
+              --primary-color: white;
+              --secondary-color: #333;
+          }
+          
+          html.dark {
+              background-color: #111;
+              color: var(--primary-color)
+          }
+          
+          .toggle {
+              cursor: pointer;
+              background-color: var(--primary-color);
+              color: var(--secondary-color);
+              border: 0;
+              border-radius: 4px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 100px;
+          }
+          
+          .toggle:focus {
+              outline: none;
+          }
 /*************** --------------- ****************/
 footer {
   border-top: 2px solid white;
@@ -176,3 +212,4 @@ footer {
 .whitespace {
   padding-bottom: 1em 
 }
+

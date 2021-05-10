@@ -43,14 +43,35 @@ p {
   font-family: 'Indie Flower', cursive;
 }
 
+
           /* input and h2 */
 
-h2, input, span{
+h2 {
   margin: 2rem;
   font-style: italic;
   display: block;
   line-height: 1rem;
 }
+
+span {
+  font-family: bebas-neue,sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  z-index: 2;
+}
+
 input::-webkit-input-placeholder {
   color: grey;
   transition: color .4s ease;
@@ -149,6 +170,8 @@ html.dark {
     outline: none;
 }
 
+          /* jush */
+
 .center {
   text-align: center;  
 }
@@ -184,6 +207,17 @@ footer {
 .feed {
   display: flex;
   justify-content: flex-start
+}
+
+@media screen and (max-width: 360px) {
+
+  .feed {
+    padding: 1em 0;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 .dumpster {
