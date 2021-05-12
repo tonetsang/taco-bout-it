@@ -172,6 +172,18 @@ input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
+@media screen and (max-width: 268px) {
+
+  body {
+    padding: 1em 0;
+    max-width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+}
+
 /*************** --------------- ****************/
 footer {
   border-top: 2px solid white;
