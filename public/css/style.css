@@ -97,7 +97,6 @@ ul {
 li{
   font-size: 20px;
   list-style: none;
-  line-height: 3rem; /*optional depending on how pictures layout*/
   flex: 1 0 21%;
   margin: 5px;
 }
@@ -253,7 +252,7 @@ footer {
   justify-content: flex-start
 }
 
-@media screen and (max-width: 268px) {
+@media screen and (max-width: 268.8px) {
 
 
 
