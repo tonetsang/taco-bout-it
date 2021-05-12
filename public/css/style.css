@@ -54,7 +54,8 @@ h2 {
 }
 
 h3 {
-  margin: 2rem;
+  margin-top: 2rem;
+  font-weight: bold;
   text-decoration: underline;
   line-height: 1rem;
 }
@@ -109,6 +110,10 @@ li{
 
 .whitespace {
   margin-bottom: 20px;
+}
+
+.bold {
+  font-weight: bold;
 }
             /* buttons to keep consistent w first page button from index page */
 button {
