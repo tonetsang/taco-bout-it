@@ -22,13 +22,12 @@
 /*******************************************/
 
 body {
-align-content: center;
-justify-content: center;
-text-align: center;
-background-color:  #c7cedf;
-
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  background-color:#c7cedf;
 }
-
 
 /******************************************
 /* LAYOUT
