@@ -24,28 +24,21 @@
     <ul>
    
     <% reviews.forEach( review => { %>
-            <li class='todoItem' data-id='<%=review._id%>'>
-               
-                
-      <a href="/reviews/resume/<%= review._id%>" >
-                  <%= review.name %>
-                  </a> :      
-                  <%= review.address %> :
-                  <%= review.review %> 
-                  
-          
-                [<%= review.userName %>]             
-
-                <% if(review.creatorId == user._id) {%>
-                   <span class='del fa fa-trash'></span>
-                <%}%>  
-
-                 <i class="fa fa-thumbs-up"></i>
-                 <%= review.likes %>
-            </li>
-            <li>
-                <img class="thumb" src="<%= review.image%>">
-            </li>
+      <li class='todoItem' data-id='<%=review._id%>'>
+          <a href="/reviews/resume/<%= review._id%>" >
+          <%= review.name %></a> :      
+          <%= review.address %> :
+          <%= review.review %> 
+          [<%= review.userName %>]             
+          <% if(review.creatorId == user._id) {%>
+            <span class='del fa fa-trash'></span>
+          <%}%>  
+          <i class="fa fa-thumbs-up"></i>
+          <%= review.likes %>
+      </li>
+      <li>
+          <img class="thumb" src="<%= review.image%>">
+      </li>
     <% }) %>    
     </ul>
   </div>

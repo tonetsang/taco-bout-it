@@ -255,10 +255,11 @@ footer {
 
 @media screen and (max-width: 268px) {
 
+
+
   .feed {
     padding: 1em 0;
     max-width: 100%;
-    display: flex;
     align-content: center;
     justify-content: center;
   }
