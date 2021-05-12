@@ -44,12 +44,18 @@ p {
 }
 
 
-          /* input and h2 */
+          /* input and headings */
 
 h2 {
   margin: 2rem;
   font-style: italic;
   display: block;
+  line-height: 1rem;
+}
+
+h3 {
+  margin: 2rem;
+  text-decoration: underline;
   line-height: 1rem;
 }
 
@@ -81,7 +87,7 @@ input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-        /* list of reviews/ output */
+        /* list of reviews/output */
 ul {
   display: flex;
   flex-wrap: wrap;
