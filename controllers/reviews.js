@@ -92,6 +92,13 @@ module.exports = {
       res.render('resume.ejs',{obj: obj})
     },
 
+    renderResumeGuest: async(req, res) =>{
+        console.log(req.params.id)
+        obj = await Review.findOne({_id: req.params.id})
+        console.log(obj)
+        res.render('resume.ejs',{obj: obj})
+      },
+
     addLike: async (req, res)=>{
       console.log(req.body.id)
         try{
