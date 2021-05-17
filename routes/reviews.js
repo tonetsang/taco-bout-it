@@ -17,7 +17,7 @@ router.delete('/deleteReview', ensureAuth, reviewsController.deleteReview)
 
 router.get('/resume/:id', ensureAuth, reviewsController.renderResume)
 
-router.get('/resume/:id', ensureGuest, reviewsController.renderResumeGuest)
+router.get('/resumeGuest/:id', ensureGuest, reviewsController.renderResumeGuest)
 
 router.put('/addLike', ensureAuth, reviewsController.addLike)
 
