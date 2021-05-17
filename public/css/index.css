@@ -35,9 +35,7 @@ body {
 
 h1{
   color: #007a79;
-  font-size: 3.5rem;
-  /* font-family: bebas-neue,sans-serif;
-  font-weight: 400; */ 
+  font-size: 72px;
   text-transform: uppercase;
   line-height: 14px;
   letter-spacing: 1.25px;
@@ -57,7 +55,7 @@ h1{
   padding-top: 1em;
 }
 .taco{
-  width: 25em;
+  width: 50em;
   transform: rotate(90deg);
   border: solid rgba(0, 0, 0, 0.658);
   padding: none;
