@@ -28,7 +28,7 @@
         <ul>
             <% reviews.forEach( review => { %>
             <li class='todoItem' data-id='<%=review._id%>'>          
-                <a href="/reviews/resume/<%= review._id%>" >
+                <a href="/reviews/resumeGuest/<%= review._id%>" >
                 <%= review.name %></a> -      
                 <%= review.address %> :
                 <%= review.review %> 
