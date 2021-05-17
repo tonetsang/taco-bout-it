@@ -172,21 +172,21 @@ input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-@media screen and (max-width: 268.8px) {
+@media screen and (max-width: 360px) {
 
   h1 {
     font-size: 90%;
-    max-width: 90%;
+    width: 90%;
   }
 
   .taco {
-    max-width: 90%;
-    max-height: 90%;
+    width: 90%;
+    height: 90%;
   }
 
   body {
     padding: 1em 0;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
