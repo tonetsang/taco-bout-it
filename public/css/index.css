@@ -55,11 +55,7 @@ h1{
   padding-top: 1em;
 }
 .taco{
-  width: 35em;
-  transform: rotate(90deg);
   border: solid rgba(0, 0, 0, 0.658);
-  padding: none;
-  margin: 0;
 }
 .signUp{
   background-color: transparent; 
