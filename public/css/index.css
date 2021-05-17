@@ -175,7 +175,7 @@ input:focus::-webkit-input-placeholder {
 @media screen and (max-width: 360px) {
 
   h1 {
-    font-size: 90%;
+    font-size: 4em;
     width: 90%;
   }
 
