@@ -169,13 +169,12 @@ input:focus::-webkit-input-placeholder {
 @media screen and (max-width: 360px) {
 
   h1 {
-    font-size: 4em;
-    width: 90%;
+    font-size: 25%;
   }
 
-  .taco {
-    width: 90%;
-    height: 90%;
+  img {
+    width: 25%;
+    height: 25%;
   }
 
   body {
