@@ -41,6 +41,11 @@ h1{
   text-align: center;
   text-decoration: underline;
 }
+
+img {
+  size: 75%;
+}
+
 .link{
   color: #002a29;
   font-size: 1.3rem;
